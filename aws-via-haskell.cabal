@@ -21,6 +21,7 @@ library
   ghc-options:                              -W -Wall -fwarn-incomplete-patterns -fwarn-unused-imports
   build-depends:                            aws-easy
                                           , base >= 4.7 && < 5
+                                          , unliftio-core                  >= 0.1    && < 0.2
   exposed-modules:                          AWSViaHaskell
 
 executable dynamodb-app
@@ -31,6 +32,7 @@ executable dynamodb-app
   build-depends:                            amazonka-dynamodb
                                           , aws-via-haskell
                                           , base >= 4.7 && < 5
+                                          , unliftio-core                  >= 0.1    && < 0.2
                                           , directory
                                           , filepath
                                           , lens
@@ -46,6 +48,7 @@ executable ec2-app
   build-depends:                            amazonka-ec2
                                           , aws-via-haskell
                                           , base >= 4.7 && < 5
+                                          , unliftio-core                  >= 0.1    && < 0.2
                                           , bytestring
                                           , directory
                                           , filepath
@@ -64,6 +67,7 @@ executable lambda-app
                                           , amazonka-sts
                                           , aws-via-haskell
                                           , base >= 4.7 && < 5
+                                          , unliftio-core                  >= 0.1    && < 0.2
                                           , bytestring
                                           , directory
                                           , filepath
@@ -83,6 +87,7 @@ executable rds-app
   build-depends:                            amazonka-rds
                                           , aws-via-haskell
                                           , base >= 4.7 && < 5
+                                          , unliftio-core                  >= 0.1    && < 0.2
                                           , bytestring
                                           , directory
                                           , filepath
@@ -98,6 +103,7 @@ executable s3-app
   build-depends:                            amazonka-s3
                                           , aws-via-haskell
                                           , base >= 4.7 && < 5
+                                          , unliftio-core                  >= 0.1    && < 0.2
                                           , bytestring
                                           , conduit-extra
                                           , lens
@@ -112,6 +118,7 @@ executable sdb-app
   build-depends:                            amazonka-sdb
                                           , aws-via-haskell
                                           , base >= 4.7 && < 5
+                                          , unliftio-core                  >= 0.1    && < 0.2
                                           , lens
                                           , text
 
@@ -123,6 +130,7 @@ executable sqs-app
   build-depends:                            amazonka-sqs
                                           , aws-via-haskell
                                           , base >= 4.7 && < 5
+                                          , unliftio-core                  >= 0.1    && < 0.2
                                           , lens
                                           , text
 
@@ -134,6 +142,7 @@ executable ssm-app
   build-depends:                            amazonka-ssm
                                           , aws-via-haskell
                                           , base >= 4.7 && < 5
+                                          , unliftio-core                  >= 0.1    && < 0.2
                                           , directory
                                           , filepath
                                           , text
