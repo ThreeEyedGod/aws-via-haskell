@@ -1,4 +1,5 @@
-resolver: lts-9.14
+#resolver: lts-9.14
+resolver: lts-17.15
 extra-deps:
 - amazonka-1.5.0
 - amazonka-core-1.5.0
