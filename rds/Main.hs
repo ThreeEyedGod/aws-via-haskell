@@ -46,7 +46,7 @@ doCreatePostgresInstance (InstanceId iid) (UserName u) (Password p) (AllocatedSt
 
 main :: IO ()
 main = do
-    rdsSession <- connect (awsConfig (AWSRegion Ohio)) rdsService
+    rdsSession <- connect (awsConfig (AWSRegion NorthVirginia)) rdsService
 
     putStrLn "doCreatePostgresInstance"
     mbDBInfo <- doCreatePostgresInstance
