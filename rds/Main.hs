@@ -18,6 +18,8 @@ import           AWSViaHaskell
 import           Data.Text (Text)
 import           RDSImports
 import           Data.Function
+import           Control.Lens
+
 
 wrapAWSService 'rds "RDSService" "RDSSession"
 
