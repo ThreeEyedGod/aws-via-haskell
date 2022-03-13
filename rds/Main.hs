@@ -17,6 +17,7 @@ module Main (main) where
 import           AWSViaHaskell
 import           Data.Text (Text)
 import           RDSImports
+import           Data.Function
 
 wrapAWSService 'rds "RDSService" "RDSSession"
 
