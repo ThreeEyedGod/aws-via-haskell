@@ -143,6 +143,7 @@ executable ssm-app
                                           , aws-via-haskell
                                           , base >= 4.7 && < 5
                                           , unliftio-core                  >= 0.1    && < 0.2
+                                          , lens
                                           , directory
                                           , filepath
                                           , text
