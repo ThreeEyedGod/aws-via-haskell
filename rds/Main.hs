@@ -20,6 +20,7 @@ import           RDSImports
 import           Data.Function
 import           Control.Lens
 
+import Network.AWS.SSM
 
 wrapAWSService 'rds "RDSService" "RDSSession"
 
