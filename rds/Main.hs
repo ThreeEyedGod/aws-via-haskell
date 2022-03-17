@@ -20,7 +20,7 @@ import           RDSImports
 import           Data.Function
 import           Control.Lens
 
-import Network.AWS.SSM
+-- import Network.AWS.SSM
 
 wrapAWSService 'rds "RDSService" "RDSSession"
 
@@ -31,6 +31,7 @@ newtype UserName = UserName Text
 
 data DBInfo = DBInfo (Maybe Text) (Maybe Text) (Maybe Text) (Maybe Int) deriving Show
 
+{--
 doCreatePostgresInstance :: InstanceId -> UserName -> Password -> AllocatedStorage -> RDSSession -> IO (Maybe DBInfo)
 doCreatePostgresInstance (InstanceId iid) (UserName u) (Password p) (AllocatedStorage a) = withAWS $ do
     result <- send $ createDBInstance iid "db.t2.micro" "postgres"
@@ -63,3 +64,4 @@ main = do
         Just dbInfo -> print dbInfo
 
     putStrLn "Done"
+    --}
