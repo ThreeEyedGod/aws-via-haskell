@@ -3,16 +3,7 @@ resolver: lts-17.15
 extra-deps:
 - amazonka-1.6.1
 - amazonka-core-1.6.1
-- amazonka-dynamodb-1.5.0
-- amazonka-ec2-1.5.0
-- amazonka-iam-1.5.0
-- amazonka-lambda-1.5.0
-- amazonka-rds-1.5.0
-- amazonka-s3-1.5.0
-- amazonka-sdb-1.5.0
-- amazonka-sqs-1.5.0
-- amazonka-ssm-1.5.0
-- amazonka-sts-1.5.0
-- aws-easy-0.1.0.0
+- amazonka-ssm-1.6.1
+- aws-easy-0.1.0.3
 
 allow-newer: true
